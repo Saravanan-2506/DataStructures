@@ -1,4 +1,4 @@
-//2-D arrays
+//1-D arrays
 #include<stdio.h>
 int total_sales(int arr[],int n){
     int sum=0;
@@ -14,7 +14,7 @@ int sales_6(int arr[],int n){
 
 int max_sales(int arr[],int n){
     int max = arr[0];
-    for(int i=0;i<n;i++){
+    for(int i=1;i<n;i++){
         if (max<arr[i]){
             max = arr[i];
         }

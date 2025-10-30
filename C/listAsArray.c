@@ -8,13 +8,15 @@ void newArray(int a[], int size) {
 
 void display(int arr[], int size) {
     printf("The elements in array:\n");
-    for (int i = 0; i < size; i++) {
+    int i = 0;
+    for (; i < size; i++) {
         printf("Element %d: %d\n", i + 1, arr[i]);
     }
 }
 
 int linearSearch(int arr[], int size, int val) {
-    for (int i = 0; i < size; i++) {
+    int i = 0;
+    for (; i < size; i++) {
         if (val == arr[i]) {
             return i;
         }
@@ -41,7 +43,8 @@ void deleteElement(int arr[], int *n, int pos) {
 }
 
 void copy(int src[], int dest[], int size) {
-    for (int i = 0; i < size; i++) {
+    int i = 0;
+    for (; i < size; i++) {
         dest[i] = src[i];
     }
 }
